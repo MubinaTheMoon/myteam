@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: $white;
+}
+h1,
+h2,
+h3{
+    margin: 0;
+}
+ol, ul{
+    list-style: none;
+}
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    font-family: 'Livvic';
+    font-size: $body1-fz;
+    line-height: $body1-lh;
+    background-color: $midnight-green;
+    color: $white
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+}
+
+main{
+    flex-grow: 1;
+}

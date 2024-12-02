@@ -1,0 +1,27 @@
+.primary-btn{
+    padding: 1rem 3.25rem;
+    border: 2px solid $white;
+    border-radius: 2.4rem;
+    font-weight: 600;
+    transition: .3s;
+    font-size: $body1-fz;
+    line-height: $body1-lh;
+}
+.primary-btn:active{
+    background:$white;
+    color: $dark-green;
+}
+.secondary-btn{
+    padding: 1rem 3.25rem;
+    border: 2px solid $sacramento-state-green;
+    border-radius: 2.4rem;
+    font-weight: 600;
+    transition: .3s;
+    font-size: $body1-fz;
+    line-height: $body1-lh;
+    color:$sacramento-state-green;
+}
+.secondary-btn:active{
+    background:$sacramento-state-green;
+    color: $white;
+}
