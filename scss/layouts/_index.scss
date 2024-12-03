@@ -1,18 +1,16 @@
 .hero{
-    padding-top: 5.6rem;
-    background-image:url('../img/combined-shapes.svg');
+    background-image:url('../images/bg-pattern-home-1.svg');
     background-repeat:no-repeat;
-    background-position:left top 5.6rem;
+    background-position: top left -10rem;
+
 }
 .hero-container{
-    // padding-top: 12.9rem;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    background-image:url('../images/bg-pattern-home-2.svg');
+    background-repeat:no-repeat;
+    background-position: bottom right 17.5rem;
     padding-bottom: 25rem;
-    background-image:url('../img/combined-shapes-bigger.svg');
-    background-repeat: no-repeat;
-    background-position: right 16.5rem bottom;
 
     h1{
         font-size: $h1-large-fz;
@@ -21,14 +19,22 @@
             color: $light-coral;
         }
     }
-    p{
-        width: 425px;
-        font-size: $body1-fz;
-        line-height: $body1-lh;
-        padding-top: 7.9rem;
-        background-image: url('../img/blue-line.svg');
-        background-repeat: no-repeat;
-        font-weight: 600;
+    .hero-text{
+        hr{
+            width: 5rem;
+            height: 4px;
+            background-color: $white;
+            border: 0;
+        }
+        p{
+            width: 425px;   
+            font-size: $body1-fz;
+            line-height: $body1-lh;
+            padding-top: 7.9rem;
+            background-image: url('../img/blue-line.svg');
+            background-repeat: no-repeat;
+            font-weight: 600;       
+        }
     }
 }
 
@@ -37,20 +43,24 @@
 
 // FEATURES
 .features{
+    background-color:$dark-green;
     padding-top: 14rem;
     padding-bottom: 14rem;
-    background-image: url('../img/combined-shapes-build.svg');
-    background-position:right bottom;
+    background-image: url('../images/bg-pattern-home-3.svg');
+    background-position:right -10rem bottom;
     background-repeat: no-repeat;
 }
 .features-container{
     display: flex;
     justify-content: space-between;
-    
+    .features-divider{
+        width: 5rem;
+        height: 4px;
+        background-color: $light-coral;
+        border: 0;
+        margin-bottom: 6rem;
+    }
     .features__text{
-        width: 44.5rem;
-        padding-top: 6rem;
-        background-image: url('../img/pink-line.svg');
         background-repeat: no-repeat;
         font-size: 3rem;
         line-height: $h2-lh;
@@ -162,6 +172,7 @@
 
 
 
+// RESPONSIVE
 @media screen and (max-width:1397px) {
     .delivery__team{
         gap: 5rem;
@@ -171,36 +182,33 @@
 
 
 @media screen and (max-width:1320px) {
-    .hero{
-        padding-top: 4.8rem;
-    }
     .hero-container{
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center; 
         background-position: center bottom;
         h1{
             font-size: 6.4rem;
-            line-height: 5.6rem;
-            padding-bottom: 2.4rem;
+            line-height: 1.1;
+            margin-bottom: 2.4rem;
         }
-        p{
-            width: 44rem;
-            padding-top: 0;
-            background-image:none;
-            font-size: 1.5rem;
-            line-height: 2.8rem;
+        .hero-text{
+            hr{
+                display: none;
+            }
+            p{
+                width: 457px;   
+                padding-top: 0;
+            }
         }
     }
-    // .delivery__team{
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
 }
-
-
-
-
+@media screen and (max-width:1200px){
+    .features-container{
+        flex-direction: column;
+        align-items: center;
+    }
+} 
 
 @media screen and (max-width:1000px) {
     .container{
@@ -213,14 +221,22 @@
         }
     }
 }
+@media screen and (max-width:940px){
+    .features{
+        background-position:top right -10rem;  
+    }
+
+}
 @media screen and (max-width:650px){
+    .hero{
+        background-image:none;
+    }
     .container{
         padding-left: 4.5em;
         padding-right: 4.5rem;
     }
-    .hero{
-        background-image: none;
-
+    .hero-container{
+        padding-bottom: 15rem;
     }
 }
 
@@ -238,7 +254,6 @@
         }
         p{
             text-align: center;
-            width: 32.7rem;
             font-size: 1.5rem;
             line-height: 2.8rem;
             padding-bottom: 7rem;
@@ -252,15 +267,19 @@
         padding-left: 2.4rem;
         padding-right: 2.4rem;
     }
-    .hero{
-        padding-top: 3rem;
-    }
+
     .hero-container{
         p{
-            width: 32.7rem;
             font-size: 1.5rem;
             line-height: 2.8rem;
             padding-bottom: 0rem;
+        }
+    }
+
+    .delivery-container{
+        h2{
+            font-size: 3.5rem;
+            line-height:1;
         }
     }
 }
