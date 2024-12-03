@@ -2,16 +2,21 @@
     padding-top: 7.6rem;
     padding-bottom: 7.6rem;
     background-color: $light-coral;
-    background-image: url('../img/footer-top-decor.svg');
+    background-image: url('../images/bg-pattern-home-6-about-5.svg');
     background-repeat: no-repeat;
     background-position: left bottom;
+
+
     .footer-top-container{
+        padding-left: 26rem;
+        padding-right: 26rem;
         display: flex;
-        justify-content: center;
-        gap: 22rem;
-        h2{
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-top-title{
             font-size: $h2-fz;
-            line-height: $h2-fz;
+            line-height: $h2-lh;
             color: $sacramento-state-green;
         }
     }
@@ -21,59 +26,73 @@
 .footer-bottom{
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
-    background-color: $sacramento-state-green;
+    background-color: $dark-green;
 
     .footer-bottom-container{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-        .footer-nav{
+    .footer-wrapper {
+        display: flex;
+        border: 2px solid dodgerblue;
+    }
+    .sitenav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul{
             display: flex;
-            gap: 12.5rem;
-            .sitenav{
-                width: 16rem;
-                display: flex;
-                flex-direction: column;
-                gap: 2.5rem;
+        }
+        img{
+            width: 160px;
+            height: 40px;
+            margin-right: 12.5rem;
+        }
+    }
+    .sitenav__list {
+    }
+    .sitenav__item {
+    }
+    .sitenav__link {
+    }
+    .footer-bottom__contact {
+        p,
+        a{
+            font-weight: 600;
+            font-size: $body2-fz;
+            line-height: $body2-lh;
+            opacity: 60%;
+        }
+    }
+    .icon-copy {
+        border: 2px solid dodgerblue;
+        display: flex;
+        flex-direction: column;
+        gap: 5.1rem;
+        align-items: end;
+    }
+    .footer-bottom__icons {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        svg{
+            path{
+                transition: .3s;
             }
-            .sitenav__list{
-                display: flex;
-                gap: 4rem;
-    
-                .sitenav__link:active{
-                    color: $light-coral;
-                }
-            }
-            .footer-bottom__contact{
-                font-size: $body2-fz;
-                line-height: $body2-lh;
-                font-weight: 600;
-                opacity: 60%;
+            &:hover path {
+                fill: $light-coral;
             }
         }
-        .icon-copy{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-            .footer-bottom__icons{
-                display: flex;
-                gap: 1.6rem;
-                
-                svg:hover path{
-                    transition: .3s;
-                    fill: $light-coral;
-                }
-            }
-            p{
-                font-size: $body2-fz;
-                line-height: $body2-lh;
-                font-weight: 600;
-                opacity: 60%;
-            }
+    }
+    .footer-bottom__copy {
+        p{
+            font-weight: 600;
+            font-size: $body2-fz;
+            line-height: $body2-lh;
+            opacity: 60%;
         }
-
-
     }
 }
 
@@ -86,12 +105,57 @@
 
 
 
+@media screen and (max-width:1236px) {
+    .footer-top-container{
+        .footer-top-title{
+            font-size: 3.2rem !important;
+            line-height: 1;
+        }
+    }
+}
+@media screen and (max-width:1156px){
+    .footer-top-container{
+        padding-left: 11.5rem !important;
+        padding-right: 11.5rem !important;
+    }
+}
+@media screen and (max-width:1088px){
+    .footer-wrapper{
+        width: 100%;
+        margin-bottom: 2.5rem;
+        justify-content: space-between;
+    }
+    .icon-copy{
+        width: 100%;
+        align-items: start !important;
+        flex-direction: row !important;
+        gap: 0 !important;
+        justify-content: space-between;
+    }
+    .footer-bottom__contact{
+        text-align: end;
+    }
 
-@media screen and (max-width:1216px) {
+
 }
 
 @media screen and (max-width:768px) {
-    .footer-top{
-        background-position: left bottom -2.2rem;
+    .footer-top-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        .footer-top-title{
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+    }
+}
+@media screen and (max-width:723px){
+    .sitenav{
+
+        img{
+            margin-right: 0;
+        }
+
     }
 }

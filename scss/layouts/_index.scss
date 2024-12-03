@@ -23,7 +23,7 @@
         hr{
             width: 5rem;
             height: 4px;
-            background-color: $white;
+            background-color: $rapture-blue;
             border: 0;
         }
         p{
@@ -43,7 +43,7 @@
 
 // FEATURES
 .features{
-    background-color:$dark-green;
+    background-color:$sacramento-state-green;
     padding-top: 14rem;
     padding-bottom: 14rem;
     background-image: url('../images/bg-pattern-home-3.svg');
@@ -62,7 +62,7 @@
     }
     .features__text{
         background-repeat: no-repeat;
-        font-size: 3rem;
+        font-size: 3.9rem;
         line-height: $h2-lh;
     }
     .features__choice{
@@ -71,24 +71,26 @@
         flex-direction: column;
         gap: 3.2rem;
 
-
         .features__choice__box{
-            width: 50rem;
+            width: 54rem;
             display: flex;
             align-items: center;
             gap: 2.3rem;
-
+            img{
+                width: 72px;
+                height: 72px;
+            }
             b{
                 color: $light-coral;
                 font-size: $body1-fz;
                 line-height: $body1-lh;
             }
             p{
-                width: 44.5rem;
                 padding-top: 1.6rem;
                 font-size: $body2-fz;
                 line-height: $body2-lh;
                 font-weight: 600;
+                opacity: 80%;
             }
         }
     }
@@ -100,8 +102,8 @@
     padding-top: 14rem;
     padding-bottom: 14rem;
     text-align: center;
-    background-image: url('../img/delivery-decor.svg'),
-    url('../img/delivery-decor2.svg');
+    background-image: url('../images/bg-pattern-home-4-about-3.svg'),
+    url('../images/bg-pattern-home-5.svg');
     background-repeat: no-repeat;
     background-position: left top, right bottom;
 }
@@ -202,11 +204,26 @@
             }
         }
     }
+    .features-container{
+        flex-direction: column;
+    }
+    .features__choice{
+        width: 100% ;
+        .features__choice__box{
+            width: 573px  !important; 
+            p{
+                width: inherit ;
+            }
+        }
+    }
 }
 @media screen and (max-width:1200px){
     .features-container{
         flex-direction: column;
         align-items: center;
+    }
+    .features__text{
+        font-size: 2rem;
     }
 } 
 
@@ -220,17 +237,26 @@
             padding-bottom: 15.6rem;
         }
     }
+
+    .delivery__team__box{
+        p{
+            width: none;
+        }
+    }
 }
 @media screen and (max-width:940px){
     .features{
         background-position:top right -10rem;  
     }
-
+    
+}
+@media screen and (max-width:768px){
+    .hero{
+        background-image: none;
+    }
 }
 @media screen and (max-width:650px){
-    .hero{
-        background-image:none;
-    }
+
     .container{
         padding-left: 4.5em;
         padding-right: 4.5rem;
