@@ -60,9 +60,8 @@
         border: 0;
         margin-bottom: 6rem;
     }
-    .features__text{
-        background-repeat: no-repeat;
-        font-size: 3.9rem;
+    .features__text h2{
+        font-size: 4.9rem;
         line-height: $h2-lh;
     }
     .features__choice{
@@ -253,6 +252,22 @@
 @media screen and (max-width:768px){
     .hero{
         background-image: none;
+    }
+    .features__text{
+        h2{
+            font-size: 5.4rem;
+        }
+    }
+    .features__choice__box{
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        .features__box-text{
+            width: 327px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }
 @media screen and (max-width:650px){

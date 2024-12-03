@@ -613,9 +613,8 @@ img {
   border: 0;
   margin-bottom: 6rem;
 }
-.features-container .features__text {
-  background-repeat: no-repeat;
-  font-size: 3.9rem;
+.features-container .features__text h2 {
+  font-size: 4.9rem;
   line-height: 1;
 }
 .features-container .features__choice {
@@ -775,6 +774,20 @@ img {
 @media screen and (max-width: 768px) {
   .hero {
     background-image: none;
+  }
+  .features__text h2 {
+    font-size: 5.4rem;
+  }
+  .features__choice__box {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+  }
+  .features__choice__box .features__box-text {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (max-width: 650px) {
