@@ -11,71 +11,77 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header-container container">
-        <div class="sitelogo-nav">
-          <img src="./img/logo.svg" alt="" />
-          <div class="sitenav">
+        <!-- LOGO -->
+        <a href="./index.html" class="site-logo">
+          <img 
+          src="./images/logo.svg" 
+          alt=""
+          width="160"
+          height="40">
+        </a>
+        <div class="header__inner-wrapper">
+          <buttom class="header__inner-wrapper-btn">
+            <img class=".header__inner-wrapper-img" width="16" height="16" src="./images/icon-close.svg" alt="">
+          </buttom>
+          <!-- NAV -->
+          <nav class="sitenav">
             <ul class="sitenav__list">
-              <li class="sitenav__item">
-                <a href="./index.html" class="sitenav__link">home</a>
-              </li>
-              <li class="sitenav__item">
-                <a href="./pages/about/about.html" class="sitenav__link"
-                  >about</a
-                >
-              </li>
+              <li class="sitenav__item"><a class="sitenav__link" href="./index.html">home</a></li>
+              <li class="sitenav__item"><a class="sitenav__link" href="./pages/about/about.html">about</a></li>
             </ul>
-          </div>
+          </nav>
+
+          <a href="./pages/contact/contact.html" class="header__btn btn btb-light">contact us</a>
         </div>
-        <div class="sitecontact">
-          <a href="./pages/contact/contact.html" class="primary-btn"
-            >contact us</a
-          >
-        </div>
-        <img class="site-hamburger" src="./img/hamburger.svg" alt="" />
+
+        <!-- TOGGLE BUTTON -->
+        <button class="header__toggle-btn">
+          <img class="header__toggle-btn__img" src="./images/icon-hamburger.svg" alt="Header toggle btn" width="20" height="17">
+        </button>
+
+
       </div>
     </header>
+
+
+
     <!-- MAIN -->
     <main class="main">
-        <section class="hero">
-            <div class="hero-container container">
-                <h1>Find the <br> best <span>talent</span></h1>
-                <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
-            </div>
-        </section>
 
-        <section class="features">
+
+      <section class="features">
             <div class="features-container container">
-                <div class="features__text">
+              <div class="features__text">
                     <h2>Build & manage distributed teams like no one else.</h2>
-                </div>
-                <div class="features__choice">
-                    <div class="features__choice__box">
+              </div>
+              <div class="features__choice">
+                <div class="features__choice__box">
                         <img src="./img/icon-feature-experience.svg" alt="">
                         <div class="features__box-text">
                             <b>Experienced Individuals</b>
                             <p>Our network is made up of highly experienced professionals who are passionate about what they do.</p>
                         </div>
-                    </div>
-                    <div class="features__choice__box">
+                </div>
+                <div class="features__choice__box">
                         <img src="./img/icon-feature-implementation.svg" alt="">
                         <div class="features__box-text">
                             <b>Easy to Implement</b>
                             <p>Our processes have been refined over years of implementation meaning our teams always deliver.</p>
                         </div>
-                    </div>
-                    <div class="features__choice__box">
+                </div>
+                <div class="features__choice__box">
                         <img src="./img/icon-feature-productivity.svg" alt="">
                         <div class="features__box-text">
                             <b>Enhanced Productivity</b>
                             <p>Our customized platform with in-built analytics helps you manage your distributed teams.</p>
                         </div>
-                    </div>
+                </div>
             </div>
         </section> 
 
         <section class="delivery">
             <div class="delivery-container container">
-                <h2>Delivering real results for top companies. Some of our <span>success stories.</span></h2>
+                <h2>Delivering real results for top <br> companies. Some of our <span>success stories.</span></h2>
                 <div class="delivery__team">
                     <div class="delivery__team__box">
                         <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
@@ -83,7 +89,7 @@
                             <b>Kady Baker</b>
                             <i>Product Manager at Bookmark</i>
                         </div>
-                        <img src="./img/kady.png" alt="">
+                        <img src="./images/avatar-kady.jpg" alt="">
                     </div>
                     <div class="delivery__team__box">
                         <p>“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
@@ -91,7 +97,7 @@
                             <b>Aiysha Reese</b>
                             <i>Founder of Manage</i>
                         </div>
-                        <img src="./img/aisha.png" alt="">
+                        <img src="./images/avatar-aiysha.jpg" alt="">
                     </div>
                     <div class="delivery__team__box">
                         <p>“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
@@ -99,15 +105,15 @@
                             <b>Arthur Clarke</b>
                             <i>Co-founder of MyPhysio</i>
                         </div>
-                        <img src="./img/arthur.png" alt="">
+                        <img src="./images/avatar-arthur.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-    </main> 
+    </main>  
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-top">
         <div class="footer-top-container container">
           <h2>Ready to get started?</h2>
@@ -190,6 +196,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>  -->
+
+    <script src="./app.js"></script>
   </body>
 </html>

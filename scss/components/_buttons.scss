@@ -1,27 +1,24 @@
-.primary-btn{
-    padding: 1rem 3.25rem;
-    border: 2px solid $white;
-    border-radius: 2.4rem;
-    font-weight: 600;
-    transition: .3s;
-    font-size: $body1-fz;
-    line-height: $body1-lh;
+.header__btn {
 }
-.primary-btn:active{
-    background:$white;
-    color: $dark-green;
+.btn {
+    padding: 1.1rem 3.2rem;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    line-height: normal;
 }
-.secondary-btn{
-    padding: 1rem 3.25rem;
-    border: 2px solid $sacramento-state-green;
-    border-radius: 2.4rem;
-    font-weight: 600;
-    transition: .3s;
-    font-size: $body1-fz;
-    line-height: $body1-lh;
-    color:$sacramento-state-green;
-}
-.secondary-btn:active{
-    background:$sacramento-state-green;
+.btb-light {
     color: $white;
+    font-weight: 600;
+    border-color: $white;
+    transition: .3s;
+
+    &:hover{
+        background-color:$white;
+        color: $dark-green;
+    }
+
+    &:active{
+        background-color: #ddd;
+    }
 }
+

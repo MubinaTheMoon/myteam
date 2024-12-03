@@ -96,9 +96,10 @@
     background-position: left top, right bottom;
 }
 .delivery-container{
-
-    h2{
-        width: 93.2rem;
+    h2{        
+        // width: 93.2rem;
+        text-align: center;
+        margin: auto;
         font-size: $h2-fz;
         line-height: $h2-lh;
         padding-bottom: 5.6rem;
@@ -110,8 +111,10 @@
 
     .delivery__team{
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
+        align-items: center;
         flex-wrap: wrap;
+
 
         .delivery__team__box{
             width: 35rem;
@@ -125,7 +128,7 @@
                 line-height: $body2-lh;
                 padding-bottom: 2.4rem;
                 font-weight: 600;
-                background-image: url('../img/icon-quotes.svg');
+                background-image: url('../images/icon-quotes.svg');
                 background-repeat: no-repeat;
                 background-position: top center;
             }
@@ -147,6 +150,8 @@
             }
             img{
                 width: 6.2rem;
+                border-radius: 50%;
+                border: 2px solid $rapture-blue;
             }
         }
     }
@@ -157,13 +162,11 @@
 
 
 
-
-
-
-
-
-
-
+@media screen and (max-width:1397px) {
+    .delivery__team{
+        gap: 5rem;
+    }
+}
 
 
 
@@ -189,6 +192,10 @@
             line-height: 2.8rem;
         }
     }
+    // .delivery__team{
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 }
 
 
