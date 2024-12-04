@@ -809,7 +809,7 @@ img {
     align-items: center;
   }
   .features__choice .features__choice__box {
-    width: 33rem !important;
+    width: 100% !important;
     padding-left: 1rem;
     padding-right: 1rem;
   }
