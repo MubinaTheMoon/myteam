@@ -626,7 +626,6 @@ img {
   gap: 3.2rem;
 }
 .features-container .features__choice .features__choice__box {
-  width: 54rem;
   display: flex;
   align-items: center;
   gap: 2.3rem;
@@ -751,6 +750,7 @@ img {
   .features-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .features__text {
     font-size: 2rem;
@@ -789,6 +789,7 @@ img {
     width: 327px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }
@@ -799,6 +800,18 @@ img {
   }
   .hero-container {
     padding-bottom: 15rem;
+  }
+  .features {
+    width: 100%;
+  }
+  .features__choice {
+    width: 100%;
+    align-items: center;
+  }
+  .features__choice .features__choice__box {
+    width: 33rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 550px) {
