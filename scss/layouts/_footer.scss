@@ -36,7 +36,6 @@
 
     .footer-wrapper {
         display: flex;
-        border: 2px solid dodgerblue;
     }
     .sitenav {
         display: flex;
@@ -67,7 +66,6 @@
         }
     }
     .icon-copy {
-        border: 2px solid dodgerblue;
         display: flex;
         flex-direction: column;
         gap: 5.1rem;
@@ -152,10 +150,39 @@
 }
 @media screen and (max-width:723px){
     .sitenav{
-
+        
         img{
             margin-right: 0;
         }
+        
+    }
+}
+@media screen and (max-width:551px){
+    .footer-bottom-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-wrapper{
+        .sitenav{
+            width: 100%;
 
+            .sitenav__list{
+                display: flex !important;
+            }
+        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bottom__contact p, a{
+        text-align: center;
+    }
+    .icon-copy{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center ;
+        gap: 2rem !important;
+        align-items: center !important;
     }
 }

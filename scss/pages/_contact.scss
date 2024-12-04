@@ -1,0 +1,117 @@
+.contact{
+    background-image:url('../images/bg-pattern-about-2-contact-1.svg'),
+    url('../images/bg-pattern-contact-2.svg');
+    background-repeat: no-repeat;
+    background-position: left -10rem top,
+    right -10rem bottom;
+    padding-bottom: 10.8rem;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact-text {
+    h1{
+        font-size: $h1-small-fz;
+        line-height: $h1-small-lh;
+        padding-bottom: 1.6rem;
+    }
+    h2{
+        font-size: 3.2rem;
+        line-height: $h3-lh;
+        color: $light-coral;
+        padding-bottom: 3.2rem;
+    }
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin-bottom: 1rem;
+    img{
+        width: 72px;
+    }
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea{
+        width: 542px;
+        font-size: $body2-fz;
+        line-height: $body2-lh;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding-top: 0.5rem;
+        padding-left: 1.4rem;
+        padding-bottom: 1.6rem;
+        background-color: transparent;
+        margin-bottom: 2.4rem;
+        color: $white;
+        resize: none;
+        &::placeholder{
+            color: white;
+            opacity: 60%;
+            font-weight: 600;
+
+        }
+        &:focus{
+            outline: 1px solid white;
+            cursor: pointer;
+        }
+    }
+
+    button{
+        width: 123px;
+        border-radius: 24px;
+        border: 2px ;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+        color: #004047;
+        font-weight: 600;
+        transition: .3s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $light-coral;
+        }
+        &:active{
+            opacity: 0.8;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:1352px) {
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-text{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form{
+        width: 100%;
+        
+        input, textarea{
+            width: inherit;
+        }
+        button{
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .contact{
+        background-position: left -10rem top,
+        right -10rem bottom -10rem;
+    }
+}

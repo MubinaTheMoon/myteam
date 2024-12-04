@@ -30,6 +30,8 @@ html{
 body{
     height: 100%;
     font-family: 'Livvic';
+    display: flex;
+    flex-direction: column;
     font-size: $body1-fz;
     line-height: $body1-lh;
     background-color: $midnight-green;
